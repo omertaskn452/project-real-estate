@@ -1,0 +1,28 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+a{
+  text-decoration: none;
+  color: inherit;
+}
+body{
+  font-family: "Lato", sans-serif;
+}
+.container{
+  width: min(95%, 1200px);
+  margin: 0 auto;
+  background-color: red;
+}
+
+@media (max-width: 1024px){
+  .container{
+    background-color: blue;
+  }
+}
+@media (max-width: 720px){
+  .container{
+    background-color: yellow;
+  }
+}
