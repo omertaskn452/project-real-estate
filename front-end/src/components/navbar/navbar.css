@@ -1,12 +1,20 @@
 .navbar{
   background-color: aliceblue;
   border-bottom: 1px solid rgb(161, 161, 161);
-  font-size: 1rem;
+  font-size: 1.25rem;
+
+  a{
+    cursor: pointer;
+    transition: all 0.2s ease-in;
+  
+    &:hover{
+      scale: 1.05;
+    }
+  } 
 }
 .navbar-wrapper{
   display: flex;
   align-items: center;
-  height: 40px;
 }
 .navbar-left{
   flex: 3;
@@ -19,36 +27,30 @@
   align-items: center;
   gap: 10px;
 }
-.navbar-logo-img-wrapper{
-  width: 32px;
-  height: 32px;
-}
 .navbar-logo-img{
-  width: 100%;
-  height: 100%;
+  width: 32px;
 }
 .navbar-link{
   display: flex;
   flex-direction: row;
   align-items: center;
+  justify-content: center;
   gap: 20px;
-  list-style: none;
-  height: 100%;
+  list-style-type: none;
 }
-.navbar-link-a{
-  display: inline-block;
+.navbar-link-item{
+  transition: all 0.2s ease-in;
+  
+   &:hover{
+    scale: 1.1;
+   }
 }
 .navbar-right{
   flex: 2;
   display: flex;
   justify-content: end;
   background-color: rgb(251, 248, 221);
-  height: 100%;
-}
-.navbar-btns{
-  margin-left: auto;
-  display: flex;
-  align-items: center;
+  padding: 10px;
 }
 .navbar-btn{
   border: none;
@@ -57,5 +59,7 @@
   font-size: inherit;
 }
 .sign-up{
-  background-color: rgb(255, 237, 138);
+  background-color: rgb(255, 231, 97);
+  border-radius: 5px;
+  cursor: pointer;
 }

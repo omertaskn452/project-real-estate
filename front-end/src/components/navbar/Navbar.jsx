@@ -8,12 +8,10 @@ const Navbar = () => {
       <div className="container">
         <div className="navbar-wrapper">
           <div className="navbar-left">
-            <div className="navbar-logo">
-              <div className="navbar-logo-img-wrapper">
-                <img className='navbar-logo-img' src="/icons/logo.png" alt="" />
-              </div>
+            <a href="#" className="navbar-logo">
+              <img className='navbar-logo-img' src="/icons/logo.png" alt="" />
               <h3 className='navbar-logo-text'>Qua-Estate</h3>
-            </div>
+            </a>
             <ul className='navbar-link'>
               <li className='navbar-link-item'><a href="" className='navbar-link-a'>Home</a></li>
               <li className='navbar-link-item'><a href="" className='navbar-link-a'>About</a></li>
@@ -22,10 +20,8 @@ const Navbar = () => {
             </ul>
           </div>
           <div className="navbar-right">
-            <div className="navbar-btns">
-              <button className='navbar-btn'>Sign in</button>
-              <button className='navbar-btn sign-up'>Sign up</button>
-            </div>
+            <a className='navbar-btn'>Sign in</a>
+            <a className='navbar-btn sign-up'>Sign up</a>
           </div>
         </div>
       </div>
