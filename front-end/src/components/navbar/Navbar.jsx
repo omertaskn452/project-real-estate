@@ -1,8 +1,16 @@
+import {useState} from 'react'
 import './navbar.css'
 
-import React from 'react'
-
 const Navbar = () => {
+  
+  const [isMenuOpened, setIsMenuOpened] = useState(false)
+
+  const toggleMenu = () => {
+    setIsMenuOpened(prevState => !prevState)
+  }
+
+  console.log(isMenuOpened)
+
   return (
     <div className="navbar">
       <div className="container">
@@ -20,9 +28,18 @@ const Navbar = () => {
             </ul>
           </div>
           <div className="navbar-right">
-            <a className='navbar-btn'>Sign in</a>
-            <a className='navbar-btn sign-up'>Sign up</a>
+            <a className='navbar-btn navbar-link-a'>Sign in</a>
+            <a className='navbar-btn navbar-link-a sign-up'>Sign up</a>
           </div>
+          <img className='navbar-menu-icon' src="/icons/menu.png" alt="" onClick={toggleMenu}/>
+          <ul className={`navbar-menu ${isMenuOpened ? 'opened' : ''}`}>
+              <li className='navbar-menu-item'><a href="" className='navbar-menu-a'>Home</a></li>
+              <li className='navbar-menu-item'><a href="" className='navbar-menu-a'>About</a></li>
+              <li className='navbar-menu-item'><a href="" className='navbar-menu-a'>Contacts</a></li>
+              <li className='navbar-menu-item'><a href="" className='navbar-menu-a'>Agents</a></li>
+              <li className='navbar-menu-item'><a href="" className='navbar-menu-a'>Sign in</a></li>
+              <li className='navbar-menu-item'><a href="" className='navbar-menu-a'>Sign up</a></li>
+            </ul>
         </div>
       </div>
     </div>
