@@ -15,6 +15,7 @@
 .navbar-wrapper{
   display: flex;
   align-items: center;
+  height: 60px;
 }
 .navbar-left{
   flex: 3;
