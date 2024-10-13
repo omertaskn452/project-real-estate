@@ -22,9 +22,6 @@
 .home-search{
   display: flex;
   flex-direction: column;
-  align-items: baseline;
-  justify-content: start;
-  padding-right: 70px;
 }
 .home-search-btn{
   background-color: transparent;
@@ -39,15 +36,23 @@
 .rent-btn{
   border-top-right-radius: 5px;
 }
-.home-search-inputs{
+.home-search-container{
   display: flex;
-  flex-direction: row;
+  height: 40px;
 }
 .home-search-input{
-  width: 100px;
+  width: 150px;
+}
+.home-search-icon-wrapper{
+  flex-grow: 1;
+  background-color: rgb(246, 202, 90);
+  border: 1px solid black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 .home-search-icon{
-  background-color: gold;
+  height: 100%;
 }
 .home-texts{
   font-size: 1.2rem;
@@ -67,4 +72,15 @@
   position: absolute;
   width: 115%;
   right: 0;
+}
+@media(width <=1024px){
+  .home-right{
+    display: none;
+  }
+  .home-title{
+    padding-right: 0;
+  }
+  .home-search-container{
+    padding-right: 0;
+  }
 }

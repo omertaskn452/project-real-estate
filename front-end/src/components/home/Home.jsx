@@ -15,11 +15,13 @@ const Home = () => {
               <button className='home-search-btn buy-btn'>Buy</button>
               <button className='home-search-btn rent-btn'>Rent</button>
             </div>
-            <div className="home-search-inputs">
+            <div className="home-search-container">
               <input className='home-search-input' type="text" />
               <input className='home-search-input' type="text" />
               <input className='home-search-input' type="text" />
-              <img className='home-search-icon' src="/icons/search.png" alt="" />
+              <div className="home-search-icon-wrapper">
+                <img className='home-search-icon' src="/icons/search.png" alt="" />
+              </div>
             </div>
           </div>
           <div className="home-texts">
