@@ -16,43 +16,10 @@
   gap: 50px;
   padding-right: 70px;
 }
-.home-title-header{
+.home-title-header{  
   font-size: 3rem;
 }
-.home-search{
-  display: flex;
-  flex-direction: column;
-}
-.home-search-btn{
-  background-color: transparent;
-  border: 0.5px solid black;
-  padding: 1rem 1.5rem;
-  border-bottom: none;
-}
-.buy-btn{
-  border-right: none;
-  border-top-left-radius: 5px;
-}
-.rent-btn{
-  border-top-right-radius: 5px;
-}
-.home-search-container{
-  display: flex;
-  height: 40px;
-}
-.home-search-input{
-  width: 150px;
-}
-.home-search-icon-wrapper{
-  flex-grow: 1;
-  background-color: rgb(246, 202, 90);
-  border: 1px solid black;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-.home-search-icon{
-  height: 100%;
+.home-title-text{
 }
 .home-texts{
   font-size: 1.2rem;
