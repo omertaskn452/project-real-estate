@@ -1,15 +1,30 @@
-import {useState} from 'react'
+import {useState, useEffect} from 'react'
 import './navbar.css'
 
 const Navbar = () => {
   
   const [isMenuOpened, setIsMenuOpened] = useState(false)
+  const [currentWidth, setCurrentWidth] = useState(window.innerWidth)
 
+  const updateWidth = () => {
+    setCurrentWidth(window.innerWidth)
+  }
+
+  useEffect(() => {
+    window.addEventListener("resize", updateWidth)
+
+    return() => {
+      window.addEventListener("resize", updateWidth)
+    }
+  }, [])
+
+  
   const toggleMenu = () => {
     setIsMenuOpened(prevState => !prevState)
   }
 
-  console.log(isMenuOpened)
+  console.log(currentWidth)
+
 
   return (
     <div className="navbar">
