@@ -1,6 +1,7 @@
 .home-search{
   display: flex;
   flex-direction: column;
+  padding-right: 50px;
 }
 .home-search-btn{
   background-color: transparent;
@@ -15,6 +16,10 @@
 .rent-btn{
   border-top-right-radius: 5px;
 }
+.active{
+  background-color: black;
+  color: white;
+}
 .home-search-container{
   display: flex;
   height: 50px;
@@ -24,15 +29,26 @@
   border: solid black 0.5px;
   text-indent: 5px;
   padding-right: 5px;
+  outline: none;
+}
+.mid-input{
+  border-left: 0;
+  border-right: 0;
 }
 .home-search-input:focus{
   outline: none;
   border: solid rgb(13, 107, 0) 1px;
 }
+.left-hidden{
+  border-left: none;
+}
+.right-hidden{
+  border-right: none;
+}
 .home-search-icon-wrapper{
   flex-grow: 1;
   background-color: rgb(246, 202, 90);
-  border: 1px solid black;
+  border: 0.5px solid black;
   border-left: 0;
   display: flex;
   align-items: center;
@@ -42,7 +58,26 @@
 .home-search-icon{
   height: 60%;
 }
-.mid-input{
-  border-left: 0;
-  border-right: 0;
+@media (width <= 1024px){
+  .home-search{
+    padding-right: 0;
+  }
+  .home-search-input{
+    width: 175px;
+  }
+}
+@media (width <= 768px){
+  .home-search-input{
+    width: 125px;
+  }
+}
+@media (width <=500px){
+  .home-search-container{
+    flex-direction: column;
+    height: auto;
+  }
+  .home-search-input{
+    height: 50px;
+    width: 100%;
+  }
 }

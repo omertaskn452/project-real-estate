@@ -13,7 +13,6 @@ body{
   font-style: normal;
 }
 .container{
-  width: 80%;
-  margin-left: auto;
-  margin-right: auto;
+  width: min(90%, 1200px);
+  margin: 0 auto;
 }
