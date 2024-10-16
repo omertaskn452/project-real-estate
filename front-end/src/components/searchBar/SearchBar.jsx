@@ -29,7 +29,7 @@ const SearchBar = () => {
     return() => {
       window.addEventListener("resize", updateWidth)
     }
-  }, currentWidth)
+  }, [currentWidth])
 
   return (
     <div className="home-search">
