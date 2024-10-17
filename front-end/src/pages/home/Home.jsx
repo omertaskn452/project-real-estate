@@ -4,7 +4,7 @@ import SearchBar from '../../components/searchBar/SearchBar'
 
 const Home = () => {
   return (
-    <div className='container'>
+    
       <div className="home-wrapper">
         <div className="home-left">
           <div className="home-title">
@@ -31,7 +31,7 @@ const Home = () => {
           <img className='home-bg-img' src="/bg.png" alt="" />
         </div>
       </div>
-    </div>
+    
   )
 }
 

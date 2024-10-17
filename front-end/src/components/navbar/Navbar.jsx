@@ -11,7 +11,6 @@ const Navbar = () => {
 
   return (
     <div className="navbar">
-      <div className="container">
         <div className="navbar-wrapper">
           <div className="navbar-left">
             <a href="#" className="navbar-logo">
@@ -39,7 +38,6 @@ const Navbar = () => {
               <li className='navbar-menu-item'><a href="" className='navbar-menu-a'>Sign up</a></li>
             </ul>
         </div>
-      </div>
     </div>
   )
 }
