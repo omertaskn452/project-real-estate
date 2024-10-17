@@ -11,7 +11,18 @@ const Search = () => {
         <div className="search-container-wrapper">
           <Filter/>
           {listData.map(item => (
-            <Card key={item.id}/>
+            <Card 
+              key={item.id}
+              id={item.id}
+              title={item.title}
+              img={item.img}
+              bedroom={item.bedroom}
+              bathroom={item.bathroom}
+              price={item.price}
+              address={item.address}
+              latitude={item.latitude}
+              longitude={item.longitude}
+            />
           ))}
         </div>
       </div>

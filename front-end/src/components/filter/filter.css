@@ -35,4 +35,9 @@
 .filter-icon-wrapper:hover{
   background-color: rgb(250, 191, 41);
 }
+@media (width <= 768px){
+  .filter-form{
+    grid-template-columns: repeat(auto-fill, minmax(90px, 1fr));
+  }
+}
 
