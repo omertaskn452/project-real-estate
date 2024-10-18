@@ -1,9 +1,14 @@
 .searchPage{
   display: flex;
+  height: 100vh;
 }
 .search-container{
   flex: 3;
   padding-top: 20px;
+}
+.search-container-wrapper{
+  height: 100%;
+  overflow-y: scroll;
 }
 .map-container{
   flex: 2;

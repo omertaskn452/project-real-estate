@@ -11,7 +11,7 @@ const Card = ({title, img, bedroom, bathroom, price, address, latitude, longitud
         <div className="card-infos">
           <h3 className='card-header'>{title}</h3>
           <div className='card-address'>
-            <img className='card-icon' src="/public/icons/pin.png" alt="" />
+            <img className='card-icon' src="/icons/pin.png" alt="" />
             <span>{address}</span>
           </div>
           <div className="card-price">
@@ -19,19 +19,19 @@ const Card = ({title, img, bedroom, bathroom, price, address, latitude, longitud
           </div>
           <div className="card-others">
             <div className="card-utility">
-              <img className='card-icon' src="/public/icons/bed.png" alt="" />
+              <img className='card-icon' src="/icons/bed.png" alt="" />
               <span>{bedroom} Bedroom</span>
             </div>
             <div className="card-utility">
-              <img className='card-icon' src="/public/icons/bath.png" alt="" />
+              <img className='card-icon' src="/icons/bath.png" alt="" />
               <span>{bathroom} Bathroom</span>
             </div>
             <div className="card-btn-wrapper">
               <div className="card-btn">
-                <img className='card-icon' src="/public/icons/save.png" alt="" />
+                <img className='card-icon' src="/icons/save.png" alt="" />
               </div>
               <div className="card-btn">
-                <img className='card-icon' src="/public/icons/chat.png" alt="" />
+                <img className='card-icon' src="/icons/chat.png" alt="" />
               </div>
             </div>
           </div>

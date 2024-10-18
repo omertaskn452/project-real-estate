@@ -6,6 +6,11 @@
 }
 .card-img-wrapper{
   flex: 4;
+  transition: all .15s ease-in;
+  cursor: pointer;
+}
+.card-img-wrapper:hover{
+  scale: 1.1;
 }
 .card-img{
   width: 100%;
@@ -61,4 +66,21 @@
 .card-icon{
   width: 15px;
   height: 15px;
+}
+@media (width <= 1024px){
+  .card-container{
+    padding-right: 0;
+  }
+}
+@media (width <= 768px){
+  .card-container{
+    flex-direction: column;
+    gap: 10px;
+  }
+  .card-img{
+    aspect-ratio: 2 / 1;
+  }
+  .card-infos{
+   gap: 10px; 
+  }
 }
